@@ -1,0 +1,279 @@
+/* IMPORTS */
+@import url("https://fonts.cdnfonts.com/css/arcade-classic");
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(31, 30, 30);
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6 )),
+    url("../public/background-site.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* HEADER */
+.main-header {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 9px 8px 0 #000, -6px 6px 0 #000, -6px -6px 0 #000,
+    6px -6px 0 #000, 0px 0px 9px #000;
+}
+.main-header.blink {
+  animation: blink 0.3s infinite;
+}
+.main-header.blink-span {
+  animation: blink-span 0.3s infinite;
+}
+.main-header.blink-span2 {
+  animation: blink-span2 0.3s infinite;
+}
+@keyframes blink {
+  0% {
+    color: red;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+@keyframes blink-span2 {
+  0% {
+    color: rgb(18, 97, 128);
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: rgb(18, 97, 128);
+  }
+}
+@keyframes blink-span {
+  0% {
+    color: rgb(164, 198, 57);
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: rgb(164, 198, 57);
+  }
+}
+.sub-header {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, 0px 0px 5px #000;
+}
+/* MAIN CONTENT OF APP */
+.game-container {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+/* TEXT EFFECTS */
+.wavy {
+  position: relative;
+}
+
+.wavy span {
+  display: inline-block;
+  font-size: 5rem;
+  text-transform: uppercase;
+  animation: animate 1.6s ease infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-20px);
+  }
+
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* FOOTER */
+footer {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 1.3rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+}
+.sound-btn{
+font-family: "ArcadeClassic", sans-serif;
+  font-size: 1.3rem;
+  padding: 10px 25px;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  border-radius: 5px;
+
+}
+.sound-btn:active{
+  transform: translateY(3px);
+}
+/* GAME-OVER */
+.game-over {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, 0px 0px 5px #000;
+}
+.game-over-header {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, 0px 0px 5px #000;
+}
+.game-left-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+}
+.quest-container {
+  background-image: url("../public/alien_monitor\ .png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+.quest-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.quest-container h1{
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, 0px 0px 5px #000;
+}
+.quest-container p{
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, 0px 0px 5px #000;
+}
+.refresh-btn {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 1.3rem;
+  padding: 10px 25px;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.refresh-btn:active {
+  transform: translateY(3px);
+}
+.starter-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+}
+.starter-screen h1 {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, 0px 0px 5px #000;
+}
+.starter-screen h2 {
+  font-family: "ArcadeClassic", sans-serif;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, 0px 0px 5px #000;
+}
+.starter-screen p {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  color: red;
+  animation: blink 0.3s infinite;
+  text-shadow: 4px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000,
+    3px -3px 0 #000, 0px 0px 5px #000;
+}
+/* MEDIA QUERIES-MOBILE ONLY */
+@media (max-width: 600px) {
+  .game-container {
+    flex-direction: column;
+  }
+  .main-header span {
+    font-size: 3rem;
+  }
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+  }
+  .quest-container {
+    width: 200px;
+    height: 200px;
+  }
+  .game-left-side{
+    padding: 30px;
+  }
+}

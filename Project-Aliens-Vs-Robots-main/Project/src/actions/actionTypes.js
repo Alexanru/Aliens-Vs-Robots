@@ -1,0 +1,9 @@
+export const INCREMENT_X = "INCREMENT_X";
+export const DECREMENT_X = "DECREMENT_X";
+export const INCREMENT_Y = "INCREMENT_Y";
+export const DECREMENT_Y = "DECREMENT_Y";
+export const SET_PLAYER_IMAGE = "SET_PLAYER_IMAGE";
+export const MOVE_NPC = "MOVE_NPC";
+export const SET_SAFE_AREA = "SET_SAFE_AREA";
+export const SET_SOLID_BLOCKS = "SET_SOLID_BLOCKS";
+export const SET_SAFE_AREA_BLOCKS = "SET_SAFE_AREA_BLOCKS";
